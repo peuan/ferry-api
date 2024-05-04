@@ -17,7 +17,7 @@ npm run install
 cp .env.example .env
 # up database run
 docker-compose up
-# up application on dev mode run
+# up application on dev mode runs
 npm run start:dev
 ```
 

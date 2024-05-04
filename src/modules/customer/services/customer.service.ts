@@ -21,7 +21,7 @@ export class CustomerService {
     });
 
     if (existingCustomer) {
-      throw new BadRequestException('Customer name is already exist');
+      throw new BadRequestException('Customer name is already exist eiei');
     }
 
     const newCustomer = this.customerRepository.create();

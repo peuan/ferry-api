@@ -16,8 +16,6 @@ export class Banner {
   @Column()
   buttonName: string;
   @Column()
-  buttonAction: string;
-  @Column()
   isClickable: boolean;
   @Column({
     default: Url.BOOKING,

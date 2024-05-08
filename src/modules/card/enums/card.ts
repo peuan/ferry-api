@@ -1,3 +1,3 @@
 export enum CARD_TYPE {
-  SIMPLE = 'simple',
+  PRICE = 'price',
 }

@@ -32,9 +32,7 @@ export class Card {
   @Column()
   url: string;
 
-  @Column({
-    default: CARD_TYPE.SIMPLE,
-  })
+  @Column()
   type: CARD_TYPE;
 
   @Column()

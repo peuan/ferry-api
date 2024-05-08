@@ -7,9 +7,10 @@ import { CoreModule } from './core/core.module';
 import { CustomerModule } from './modules/customer/customer.module';
 import { APP_INTERCEPTOR, APP_PIPE } from '@nestjs/core';
 import { CardModule } from './modules/card/card.module';
+import { BannerModule } from './modules/banner/banner.module';
 
 @Module({
-  imports: [CoreModule, CustomerModule, CardModule],
+  imports: [CoreModule, CustomerModule, BannerModule, CardModule],
   controllers: [],
   providers: [
     {

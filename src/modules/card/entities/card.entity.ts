@@ -12,17 +12,16 @@ export class Card {
   @Column()
   subTitle: string;
 
-  @Column()
-  mediaId: string;
-
-  @Column()
+  @Column({
+    type: 'text',
+  })
   desc: string;
 
   @Column()
   buttonName: string;
 
   @Column({
-    default: false,
+    default: true,
   })
   isClickable: boolean;
 

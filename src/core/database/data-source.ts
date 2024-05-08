@@ -2,6 +2,7 @@ import { DataSource } from 'typeorm';
 import { config } from 'dotenv';
 import { ConfigService } from '@nestjs/config';
 import { Customer } from 'src/modules/customer/entities/customer.entity';
+import { Card } from 'src/modules/card/entities/card.entity';
 
 config();
 
@@ -14,7 +15,7 @@ const dataSource = new DataSource({
   username: configService.get('DB_USERNAME'),
   password: configService.get('DB_PASSWORD'),
   database: configService.get('DB_NAME'),
-  entities: [Customer],
+  entities: [Customer, Card],
   synchronize: true,
   migrationsRun: true,
   migrations: [],

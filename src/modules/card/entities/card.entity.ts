@@ -1,5 +1,5 @@
 import { Column, Entity, PrimaryGeneratedColumn } from 'typeorm';
-import { CARD_TYPE } from '../enums/card';
+import { CARD_TYPE } from '../enums/card.enum';
 
 @Entity('card')
 export class Card {
@@ -20,9 +20,6 @@ export class Card {
 
   @Column()
   buttonName: string;
-
-  @Column()
-  buttonAction: string;
 
   @Column({
     default: false,

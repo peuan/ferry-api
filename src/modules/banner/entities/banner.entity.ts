@@ -11,7 +11,9 @@ export class Banner {
 
   @Column()
   subTitle?: string;
-  @Column()
+  @Column({
+    type: 'text',
+  })
   desc: string;
   @Column()
   buttonName: string;

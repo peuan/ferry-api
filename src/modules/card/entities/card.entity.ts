@@ -32,5 +32,5 @@ export class Card {
   type: CARD_TYPE;
 
   @Column()
-  price: number;
+  price?: number;
 }

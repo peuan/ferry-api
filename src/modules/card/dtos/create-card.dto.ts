@@ -49,5 +49,5 @@ export class CreateCardDto {
   @ApiProperty({
     example: 1000,
   })
-  price: number;
+  price?: number;
 }
